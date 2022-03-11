@@ -1,0 +1,39 @@
+@media (min-width: 815px) and (max-width: 1200px) {
+  .versus-head {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 815px) {
+  .versus-head {
+    max-width: 350px;
+    height: 90px;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+  .versus-headV2 {
+    display: grid;
+    width: 390px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .versus-head span {
+    font-size: 32px;
+  }
+  .versus-headV2 p {
+    font-size: 18px;
+  }
+  .versus-headV2 span {
+    font-size: 18px;
+  }
+  .versus-body {
+    font-size: 40px;
+  }
+  .versus-body button {
+    width: 140px;
+    height: 40px;
+  }
+}
