@@ -24,10 +24,8 @@
     display: block;
   }
 
-  .work-link img:hover {
-    padding: 10px;
-    width: 300px;
-    height: 225px;
+  *:hover {
+    animation: none;
   }
 
   .versus-head {
@@ -36,14 +34,7 @@
     text-align: center;
     justify-content: space-between;
   }
-  /* .versus-headV2 {
-    display: grid;
-    width: 390px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0px;
-  } */
+
   .versus-head span {
     font-size: 32px;
   }
@@ -53,8 +44,8 @@
   .versus-headV2 span {
     font-size: 18px;
   }
-  .versus-body {
-    font-size: 40px;
+  .versus-body span {
+    font-size: 35px;
   }
   .versus-body button {
     width: 140px;
@@ -69,12 +60,20 @@
   #side-checkbox {
     display: none;
   }
+
+  .spansed {
+    display: block;
+    font-size: 40px;
+    font-family: "Dancing Script";
+    color: rgb(253, 185, 185);
+  }
+
   .side-panel {
     position: fixed;
     z-index: 999999;
     top: 0;
     left: -360px;
-    background: #337ab7;
+    background: rgba(161, 137, 137, 0.863);
     transition: all 0.5s;
     width: 250px;
     height: 100vh;
@@ -88,6 +87,11 @@
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 2px solid #bfe2ff;
+
+    font-size: 30px;
+    font-family: "Dancing Script";
+
+    color: rgb(255, 223, 223);
   }
   /* Оформление кнопки на странице */
   .side-button-1-wr {
@@ -107,41 +111,11 @@
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Roboto", Тahoma, sans-serif;
-    background: #337ab7;
+    background: #000000;
     cursor: pointer;
     border: 2px solid #bfe2ff;
   }
-  .side-button-1 .side-b:hover,
-  .side-button-1 .side-b:active,
-  .side-button-1 .side-b:focus {
-    color: #fff;
-  }
-  .side-button-1 .side-b:after,
-  .side-button-1 .side-b:before {
-    position: absolute;
-    height: 4px;
-    left: 50%;
-    bottom: -6px;
-    content: "";
-    transition: all 280ms ease-in-out;
-    width: 0;
-  }
-  .side-button-1 .side-open:after,
-  .side-button-1 .side-open:before {
-    background: green;
-  }
-  .side-button-1 .side-close:after,
-  .side-button-1 .side-close:before {
-    background: red;
-  }
-  .side-button-1 .side-b:before {
-    top: -6px;
-  }
-  .side-button-1 .side-b:hover:after,
-  .side-button-1 .side-b:hover:before {
-    width: 100%;
-    left: 0;
-  }
+
   /* Переключатели кнопки 1 */
   .side-button-1 .side-close {
     display: none;
@@ -173,11 +147,41 @@
     right: 8px;
     cursor: pointer;
     transform: rotate(45deg);
-    color: #bfe2ff;
+    color: #ffb56ff3;
     transition: all 280ms ease-in-out;
   }
-  .side-button-2:hover {
-    transform: rotate(45deg) scale(1.1);
-    color: #fff;
+
+  /* == */
+
+  /* == */
+
+  .versus-headV5 {
+    display: grid;
+    width: 200px;
+    height: 60px;
+    margin: 0px auto;
+
+    align-items: center;
+    justify-content: center;
+    color: #c2c2c2;
+  }
+
+  .versus-headV5 a {
+    padding: 20px;
+  }
+
+  .versus-headV5 p {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #00d6b4;
+  }
+
+  .versus-headV5 span {
+    line-height: 22px;
+    font-size: 18px;
+    color: #d3d3d3;
   }
 }
